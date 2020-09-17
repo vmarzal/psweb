@@ -14,4 +14,9 @@ app.get('/', function(req, res) {
 });
 
 app.listen(8080);
+
+app.listen(8080, () => {
+ console.log('Server running on port %d', 8080);
+});
+
 module.exports.getApp = app;
